@@ -1,0 +1,71 @@
+[2021-09-24 10:34:49] [WARNING]: lambda 初始化失败: Post "http:///runtime/init/ready": http: no Host in request URL 
+[2021-09-24 10:34:49] [WARNING]: 警告: pprof 服务不支持鉴权, 请不要运行在公网. 
+[2021-09-24 10:34:49] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:34:52] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:34:55] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:34:58] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:35:01] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:35:02] [ERROR]: Protocol -> unexpected disconnect: EOF 
+[2021-09-24 10:35:03] [ERROR]: Protocol -> panic on decoder ConfigPushSvc.PushReq : EOF
+goroutine 111 [running]:
+runtime/debug.Stack()
+	runtime/debug/stack.go:24 +0x65
+github.com/Mrs4s/MiraiGo/client.(*QQClient).netLoop.func1.1()
+	github.com/Mrs4s/MiraiGo@v0.0.0-20210916113136-0238b2382b82/client/network.go:223 +0x5d
+panic({0x13d6780, 0xc000102040})
+	runtime/panic.go:1038 +0x215
+github.com/Mrs4s/MiraiGo/binary/jce.(*JceReader).readBytes(...)
+	github.com/Mrs4s/MiraiGo@v0.0.0-20210916113136-0238b2382b82/binary/jce/reader.go:96
+github.com/Mrs4s/MiraiGo/binary/jce.(*JceReader).skip(...)
+	github.com/Mrs4s/MiraiGo@v0.0.0-20210916113136-0238b2382b82/binary/jce/reader.go:44
+github.com/Mrs4s/MiraiGo/binary/jce.(*JceReader).skipField(0xc000006170, 0x70)
+	github.com/Mrs4s/MiraiGo@v0.0.0-20210916113136-0238b2382b82/binary/jce/reader.go:50 +0x6b7
+github.com/Mrs4s/MiraiGo/binary/jce.(*JceReader).skipToTag(0xc000006170, 0x8)
+	github.com/Mrs4s/MiraiGo@v0.0.0-20210916113136-0238b2382b82/binary/jce/reader.go:145 +0x31
+github.com/Mrs4s/MiraiGo/binary/jce.(*JceReader).ReadInt32(0xc000006170, 0x136cba0)
+	github.com/Mrs4s/MiraiGo@v0.0.0-20210916113136-0238b2382b82/binary/jce/reader.go:196 +0x25
+github.com/Mrs4s/MiraiGo/binary/jce.(*RequestPacket).ReadFrom(0xc000506960, 0x0)
+	github.com/Mrs4s/MiraiGo@v0.0.0-20210916113136-0238b2382b82/binary/jce/structs.go:559 +0x194
+github.com/Mrs4s/MiraiGo/client.decodePushReqPacket(0xc0000d4000, 0x3c0, {0xc0003d4800, 0x3c0, 0x3c0})
+	github.com/Mrs4s/MiraiGo@v0.0.0-20210916113136-0238b2382b82/client/decoders.go:305 +0x105
+github.com/Mrs4s/MiraiGo/client.(*QQClient).netLoop.func1(0xc000490d20)
+	github.com/Mrs4s/MiraiGo@v0.0.0-20210916113136-0238b2382b82/client/network.go:233 +0x1cb
+created by github.com/Mrs4s/MiraiGo/client.(*QQClient).netLoop
+	github.com/Mrs4s/MiraiGo@v0.0.0-20210916113136-0238b2382b82/client/network.go:220 +0x525
+ 
+[2021-09-24 10:35:04] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:35:07] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:35:10] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:35:13] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:35:16] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:35:19] [ERROR]: Protocol -> unexpected disconnect: EOF 
+[2021-09-24 10:35:19] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:35:22] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:35:25] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:35:28] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:35:32] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:35:35] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:35:35] [ERROR]: Protocol -> unexpected disconnect: EOF 
+[2021-09-24 10:35:38] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:35:41] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:35:44] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:35:47] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:35:50] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:35:53] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:35:56] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:35:59] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:36:02] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:36:05] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:36:08] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:36:11] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:36:14] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:36:17] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:36:20] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:36:23] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:36:26] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:36:30] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:36:33] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:36:36] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:36:39] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:36:42] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 
+[2021-09-24 10:36:45] [WARNING]: 连接到反向WebSocket Universal服务器 ws://your_websocket_universal.server 时出现错误: dial tcp: lookup your_websocket_universal.server: no such host 

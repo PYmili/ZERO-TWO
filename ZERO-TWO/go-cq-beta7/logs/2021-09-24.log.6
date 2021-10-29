@@ -1,0 +1,31 @@
+[2021-09-24 10:43:13] [ERROR]: Protocol -> panic on decoder ConfigPushSvc.PushReq : EOF
+goroutine 87 [running]:
+runtime/debug.Stack()
+	runtime/debug/stack.go:24 +0x65
+github.com/Mrs4s/MiraiGo/client.(*QQClient).netLoop.func1.1()
+	github.com/Mrs4s/MiraiGo@v0.0.0-20210916113136-0238b2382b82/client/network.go:223 +0x5d
+panic({0x13d6780, 0xc000088040})
+	runtime/panic.go:1038 +0x215
+github.com/Mrs4s/MiraiGo/binary/jce.(*JceReader).readBytes(...)
+	github.com/Mrs4s/MiraiGo@v0.0.0-20210916113136-0238b2382b82/binary/jce/reader.go:96
+github.com/Mrs4s/MiraiGo/binary/jce.(*JceReader).skip(...)
+	github.com/Mrs4s/MiraiGo@v0.0.0-20210916113136-0238b2382b82/binary/jce/reader.go:44
+github.com/Mrs4s/MiraiGo/binary/jce.(*JceReader).skipField(0xc000306000, 0x0)
+	github.com/Mrs4s/MiraiGo@v0.0.0-20210916113136-0238b2382b82/binary/jce/reader.go:50 +0x6b7
+github.com/Mrs4s/MiraiGo/binary/jce.(*JceReader).skipToTag(0xc000306000, 0x9)
+	github.com/Mrs4s/MiraiGo@v0.0.0-20210916113136-0238b2382b82/binary/jce/reader.go:145 +0x31
+github.com/Mrs4s/MiraiGo/binary/jce.(*JceReader).ReadMap(0xc000306000, {0x13e5540, 0xc000310030}, 0x8)
+	github.com/Mrs4s/MiraiGo@v0.0.0-20210916113136-0238b2382b82/binary/jce/reader.go:367 +0xf1
+github.com/Mrs4s/MiraiGo/binary/jce.(*RequestPacket).ReadFrom(0xc000300180, 0x0)
+	github.com/Mrs4s/MiraiGo@v0.0.0-20210916113136-0238b2382b82/binary/jce/structs.go:560 +0x1b6
+github.com/Mrs4s/MiraiGo/client.decodePushReqPacket(0xc0003c2000, 0x3bc, {0xc00058c800, 0x3bc, 0x3bc})
+	github.com/Mrs4s/MiraiGo@v0.0.0-20210916113136-0238b2382b82/client/decoders.go:305 +0x105
+github.com/Mrs4s/MiraiGo/client.(*QQClient).netLoop.func1(0xc0003040a0)
+	github.com/Mrs4s/MiraiGo@v0.0.0-20210916113136-0238b2382b82/client/network.go:233 +0x1cb
+created by github.com/Mrs4s/MiraiGo/client.(*QQClient).netLoop
+	github.com/Mrs4s/MiraiGo@v0.0.0-20210916113136-0238b2382b82/client/network.go:220 +0x525
+ 
+[2021-09-24 10:43:15] [WARNING]: lambda 初始化失败: Post "http:///runtime/init/ready": http: no Host in request URL 
+[2021-09-24 10:43:15] [WARNING]: 警告: pprof 服务不支持鉴权, 请不要运行在公网. 
+[2021-09-24 10:43:33] [ERROR]: Protocol -> unexpected disconnect: EOF 
+[2021-09-24 10:43:50] [ERROR]: Protocol -> unexpected disconnect: EOF 
