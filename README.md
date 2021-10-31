@@ -8,7 +8,7 @@ ZERO-TWO QQ机器人基于[nonebot2](https://github.com/nonebot)框架
 
 <p align="center">
   <a href="https://blog.csdn.net/qq_53280175/article/details/119281188">
-    <img src="http://47.108.189.192/Pymili/image/PYmili.jpg" width="400" height="400" alt="PYmili">
+    <img src="http://47.108.189.192/Pymili/image/PYmili.jpg" width="200" height="200" alt="PYmili">
   </a>
 </p>
 
