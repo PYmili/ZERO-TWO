@@ -1,7 +1,7 @@
 # ZERO-TWO
 ZERO-TWO-QQ机器人-基于nonebot2框架
 
-ZERO-TWO 机器人基于nonebot2(https://github.com/nonebot)框架
+ZERO-TWO 机器人基于[nonebot2](https://github.com/nonebot)框架
 
 制作系统：windows 10
 
