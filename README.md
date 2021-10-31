@@ -1,6 +1,6 @@
 # ZERO-TWO
 
-ZERO-TWO QQ机器人基于[nonebot2](https://github.com/nonebot)框架
+ZERO-TWO QQ机器人基于[nonebot2](https://github.com/nonebot)框架以及[go-cqhttp](https://github.com/Mrs4s/go-cqhttp)
 
 制作系统：windows 10
 
