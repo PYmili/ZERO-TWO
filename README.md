@@ -6,7 +6,7 @@ ZERO-TWO QQ机器人基于[nonebot2](https://github.com/nonebot)框架
 
 制作者：PYmili
 
-<p align="center">
+<p align="left">
   <a href="https://blog.csdn.net/qq_53280175/article/details/119281188">
     <img src="http://47.108.189.192/Pymili/image/PYmili.jpg" width="200" height="200" alt="PYmili">
   </a>
